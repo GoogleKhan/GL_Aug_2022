@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class TestController {
 
-	@Value("${my.greeting}")
+	@Value("${my.message}")
 	private String greet;
 
-	@Value("${fruits}")
+	@Value("${my.fruits}")
 	private List<String> fruits;
 
 	@GetMapping("/display")

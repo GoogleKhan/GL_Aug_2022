@@ -1,0 +1,29 @@
+1. Download Tomcat and extract it. https://tomcat.apache.org/download-90.cgi  
+	and 
+   download and extract Maven : https://maven.apache.org/download.cgi
+
+
+2. open \apache-tomcat-9.0.64\conf\tomcat-users.xml and chnge below lines:
+		
+		<role rolename="manager-script"/>
+  <role rolename="admin-gui"/>
+  <user username="tomcat" password="tomcat" roles="manager-script, admin-gui"/>
+
+3. Create Envrionment Variables:
+	Right click on This PC -> Advance System Settings -> Environment Variables
+	  Under the User variable Section
+	  
+	  JAVA_HOME : C:\Program Files\Java\jdk1.8.0_281
+	  M2_HOME : D:\tools\apache-maven-3.8.6
+	  MAVEN_HOME : D:\tools\apache-maven-3.8.6
+
+
+4. How to Start Tomcat: D:\tools\apache-tomcat-9.0.64\bin\startup.bat
+                                                          \shutdown.bat
+	
+5. htpp://localhost:8080/
+
+6. Installed these pluugins in Jenkis for Deployemnet
+
+Copy Artifact Plugin
+Deploy to container Plugin
